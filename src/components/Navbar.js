@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import '../styles/navbar.css';
 
 class Navbar extends Component {
@@ -6,17 +7,19 @@ class Navbar extends Component {
     return(
       <nav>
         <ul>
-          <li id="logo"><a href="#"><h1>Ali</h1></a></li>
+          <li id="logo"><Link to="/"><h1>Ali</h1></Link></li>
         </ul>
         
         <i className="fa fa-bars" aria-hidden="true" id="menu-bar"></i>
-        
+
         <ul className="nav-list">
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">PROJECTS</a></li>
-          <li><a href="">SKILLS</a></li>
-          <li><a href="">CONTACT</a></li>
+          <i className="fa fa-times-circle" aria-hidden="true" id="close-btn"></i>
+          <li><Link to="/">HOME</Link></li>
+          <li><Link to="about">ABOUT</Link></li>
+          <li><Link to="">PROJECTS</Link></li>
+          <li><Link to="">SKILLS</Link></li>
+          <li><Link to="">CONTACT</Link></li>
+          {this.props.children}
         </ul>
       </nav> 
     )
