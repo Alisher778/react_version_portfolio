@@ -6,6 +6,7 @@ export default class About extends Component {
   render() {
     return(
     <div id="about">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik" rel="stylesheet" />
       <div className="photo">
         <img src={avatar} alt="avatar"/>
       </div>
@@ -14,11 +15,11 @@ export default class About extends Component {
         <div id="devider"></div>
         <div id="text">
           <p>
-          Hi, My name is Alisher Musurmonov and I am a full-stack web-developer based in Brooklyn, New York.
-          I love creating amazing web applications using best practice in the web development industry.
+          Hi, My name is <b>Alisher Musurmonov</b> and I am a <b>full-stack web-developer</b> based in Brooklyn, New York.
+          I love creating amazing web applications using best practice <b>in</b> the web development <b>industry</b>.
         </p>
         <p>
-          I am coding and creating web applications professionally for 2 years. I graduated from <a href="www.nycda.com">NYCDA</a> coding bootcamp. I am reliable, trustworthy, professional, creative and passionate about whatever I create. 
+          I am coding and creating web applications professionally for 2 years. I graduated from <a href="www.nycda.com">NYCDA</a> coding bootcamp. I am <b>reliable</b>, trustworthy, professional, <b>creative</b> and love what I do. 
         </p>
         <div className="hobby">
           <h1>HOBBIES & INTERESTS</h1>
