@@ -19,7 +19,7 @@ export default class About extends Component {
           I love creating amazing web applications using best practice <b>in</b> the web development <b>industry</b>.
         </p>
         <p>
-          I am coding and creating web applications professionally for 2 years. I graduated from <a href="www.nycda.com">NYCDA</a> coding bootcamp. I am <b>reliable</b>, trustworthy, professional, <b>creative</b> and love what I do. 
+          I am coding and creating web applications professionally for 2 years. I graduated from <a href="https://nycda.com/" target="_blank">NYCDA</a> coding bootcamp. I am <b>reliable</b>, trustworthy, professional, <b>creative</b> and love what I do. 
         </p>
         <div className="hobby">
           <h1>HOBBIES & INTERESTS</h1>

@@ -23,4 +23,18 @@ $(document).ready(function(){
       nav.css('backgroundColor', 'transparent');
     }
   })
+
+  //on Scroll nav list color active
+  $(document).scroll(function() {
+     let scroll_top = $(document).scrollTop();
+     let aboutPage = $('#about').position().top;
+    
+
+      if(scroll_top > aboutPage) {
+        $('#aboutLink').css({'color':'red','borderBottom': '3px solid' });
+      }else{
+        $('#aboutLink').css({'color':'#fff','border': '0' });
+      }
+  });
+
 });

@@ -15,7 +15,7 @@ class Navbar extends Component {
         <ul className="nav-list">
           <i className="fa fa-times-circle" aria-hidden="true" id="close-btn"></i>
           <li><Link to="/">HOME</Link></li>
-          <li><Link to="about">ABOUT</Link></li>
+          <li><a href="#about" id="aboutLink">ABOUT</a></li>
           <li><Link to="">PROJECTS</Link></li>
           <li><Link to="">SKILLS</Link></li>
           <li><Link to="">CONTACT</Link></li>
