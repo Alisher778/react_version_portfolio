@@ -14,11 +14,11 @@ class Navbar extends Component {
 
         <ul className="nav-list">
           <i className="fa fa-times-circle" aria-hidden="true" id="close-btn"></i>
-          <li><Link to="/">HOME</Link></li>
+          <li><a href="#home-page" id="homeLink" className="active">HOME</a></li>
           <li><a href="#about" id="aboutLink">ABOUT</a></li>
-          <li><Link to="">PROJECTS</Link></li>
-          <li><Link to="">SKILLS</Link></li>
-          <li><Link to="">CONTACT</Link></li>
+          <li><a href="#projects" id="projectsLink">PROJECTS</a></li>
+          <li><a href="#skills" id="skillsLink">SKILLS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
           {this.props.children}
         </ul>
       </nav> 

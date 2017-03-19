@@ -28,13 +28,19 @@ $(document).ready(function(){
   $(document).scroll(function() {
      let scroll_top = $(document).scrollTop();
      let aboutPage = $('#about').position().top;
+     let projectsPage = $('#projects').offset();
+     let skillsPage = $('#skills').offset();
+
+     
+      if(scroll_top > aboutPage) {
+        $('.nav-list a').removeClass('active');
+        $('#aboutLink').addClass('active');
+      }else{
+         $('.nav-list a').removeClass('active');
+         $('#homeLink').addClass('active')
+      }
     
 
-      if(scroll_top > aboutPage) {
-        $('#aboutLink').css({'color':'red','borderBottom': '3px solid' });
-      }else{
-        $('#aboutLink').css({'color':'#fff','border': '0' });
-      }
   });
 
 });

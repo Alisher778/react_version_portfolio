@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-
+import '../styles/footer.css';
 
 class Footer extends Component {
   render() {
     return (
-      <footer>
-        My Footer
+      <footer id="footer">
+        &copy; 2017 Alisher Musurmonov
       </footer>
     )
   }

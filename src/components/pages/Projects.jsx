@@ -4,11 +4,11 @@ import '../../styles/projects.css';
 class Projects extends Component {
   render() {
     return(
-        <div className="projects">
+        <div id="projects">
+          <div></div>
           <h1>Projects</h1>
           <ul className="all-projects">
             <li>
-              <a href="">
                   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css" />
 
               <img src="https://s3.amazonaws.com/my-web-storage/images/portfolio-rstore-app.jpg" alt=""/>
@@ -27,10 +27,8 @@ class Projects extends Component {
                  <p><strong>User name:</strong><i> admin@example.com</i>, <br/><strong>Password:</strong><i> password</i></p>
                 <a href="https://rstore.herokuapp.com/" className="view-btn">View</a>
               </div>
-              </a>
             </li>
             <li>
-              <a href="">
               <img src="https://s3.amazonaws.com/my-web-storage/images/portfolio-instagram-app.jpg" alt=""/>
               
               <div className="project-details">
@@ -48,10 +46,8 @@ class Projects extends Component {
                 <p><strong>User name:</strong><i> admin@example.com</i>,<br /> <strong>Password:</strong><i> password</i></p>
                 <a href="https://instagram-nycda.herokuapp.com/" className="view-btn">View</a>
               </div>
-              </a>
             </li>
             <li>
-              <a href="">
               <img src="https://s3.amazonaws.com/my-web-storage/images/portfolio-ielts-app.jpg" alt=""/>
               
               <div className="project-details">
@@ -70,7 +66,6 @@ class Projects extends Component {
                  <p><strong>User name:</strong> <i>admin@example.com</i>,<br/> <strong>Password:</strong> <i>admin123</i></p>
                 <a href="https://ieltsapp.herokuapp.com/" className="view-btn">View</a>
               </div>
-              </a>
             </li>
           </ul>
         </div>

@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Footer from './Footer';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Skills from './pages/Skills';
 
 
 export default class App extends Component {
@@ -12,8 +13,9 @@ export default class App extends Component {
        <div>
         <Navbar />
         <Home/>
-        <About />
-        <Projects />
+        <About/>
+        <Projects/>
+        <Skills />
         <Footer />
        </div> 
     )
