@@ -18,7 +18,7 @@ class Navbar extends Component {
           <li><a href="#about" id="aboutLink">ABOUT</a></li>
           <li><a href="#projects" id="projectsLink">PROJECTS</a></li>
           <li><a href="#skills" id="skillsLink">SKILLS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#contact" id="contactLink">CONTACT</a></li>
           {this.props.children}
         </ul>
       </nav> 

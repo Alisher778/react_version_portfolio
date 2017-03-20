@@ -24,23 +24,36 @@ $(document).ready(function(){
     }
   })
 
+  $('nav li a').click(function(){
+    
+    $('.nav-list').removeClass('overlay');
+    $(this).addClass('active');
+  })
   //on Scroll nav list color active
   $(document).scroll(function() {
-     let scroll_top = $(document).scrollTop();
+     let scroll_top = $(window).scrollTop();
      let aboutPage = $('#about').position().top;
-     let projectsPage = $('#projects').offset();
-     let skillsPage = $('#skills').offset();
+     let projectsPage = $('#projects').position().top;
+     let skillsPage = $('#skills').position().top;
+     let contactPage = $('#contact').position().top;
 
-     
-      if(scroll_top > aboutPage) {
+      if(scroll_top+50 > contactPage){
         $('.nav-list a').removeClass('active');
-        $('#aboutLink').addClass('active');
-      }else{
+        $('#contactLink').addClass('active');
+      }else if(scroll_top+50 > skillsPage) {
+        $('.nav-list a').removeClass('active');
+        $('#skillsLink').addClass('active')
+      }else if(scroll_top+50 > projectsPage){
+        $('.nav-list a').removeClass('active');
+        $('#projectsLink').addClass('active')
+      }else if(scroll_top+50 >  aboutPage){
          $('.nav-list a').removeClass('active');
-         $('#homeLink').addClass('active')
+         $('#aboutLink').addClass('active');
+      }else{
+        $('.nav-list a').removeClass('active');
+        $('#homeLink').addClass('active')
       }
-    
-
   });
+
 
 });
